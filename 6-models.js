@@ -1,3 +1,5 @@
+const roseGold = createMaterial( "phong", { color: 0xF5986E });
+
 var vector = new THREE.Vector3();
 var size = 1
 document.body.addEventListener('mousewheel', (event) => { size = Math.max(0.1, size + Math.sign(event.deltaY) * -0.1); } );
