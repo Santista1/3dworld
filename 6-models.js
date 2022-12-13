@@ -15,7 +15,7 @@ var autoclick = true;
 function createObject () {
 
 	modelsScene.add( createMesh(
-		createGeometry( typeArray[type], { radius: size / 2, width: size, height: size, depth: size, length: size / 2, radiusTop: size / 2, radiusBottom: size / 2, tube: 0.1, tubularSegments: 30 }),
+		createGeometry( typeArray[type], { radius: size / 2, width: size, height: size, depth: size, length: size / 2, radiusTop: size / 2, radiusBottom: size / 2, tube: 0.1, tubularSegments: 100, radialSegments:20 }),
 		createMaterial( qualityArray[quality], { color: Math.random() * 0xffffff }),
 		createPoint({
 			x: modelsCamera.position.x + camera.getWorldDirection( vector ).x * distance,
